@@ -1,0 +1,212 @@
+@media (max-width: 768px) {
+    .content {
+        width: 78%;
+        height: 93dvh;
+    }
+  }
+
+@media (max-width: 768px) {
+  .infoSidebar {
+      width: 100%;
+      height: 93dvh;
+      min-width: 280px;
+      background-color: white;
+      z-index: 20;
+      position: absolute;
+      box-shadow: 5px 0 5px -3px rgb(221, 221, 211, 0.5);
+  }
+}
+
+@media (max-width: 768px) {
+  .sidebar {
+      width: 100%;
+      height: 50dvh;
+      background-color: white;
+      z-index: 20;
+      position: absolute;
+      /* box-shadow: 5px 0 5px -3px rgb(221, 221, 211, 0.5); */
+      top: 51dvh;
+      /* top: 50dvh; */
+  }
+}
+
+@media (max-width: 768px) {
+  ul {
+      min-height: 125px;
+  }
+}
+
+@media (max-width: 768px) {
+  .sidebarTravelListO1DivInfoAddress,
+  .sidebarTravelListO1DivInfoTel,
+  .sidebarTravelListO2DivInfoAddress,
+  .sidebarTravelListO2DivInfoTel,
+  .sidebarTravelListO3DivInfoAddress,
+  .sidebarTravelListO3DivInfoTel {
+      font-size: 12px;
+  }
+}
+
+@media (max-width: 768px) {
+  .sidebarTravelChoiceOWrap {
+      width: 100%;
+      height: 25%;
+      box-shadow: 0 3px 5px 3px rgb(221, 221, 211, 0.3);
+      background-color: white;
+  }
+}
+
+@media (max-width: 768px) {
+  .sidebarTravelChoiceOPlaceCongestion {
+      width: 25%;
+      height: 50%;
+      font-size: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .sidebarTravelChoice1Category {
+      width: 100%;
+      height: 20%;
+      font-size: 12px;
+      display: none;
+      flex-direction: column;
+      justify-content: center;
+      padding: 0 3%;
+      background-color: white;
+      box-shadow: 0 3px 5px 3px rgb(221, 221, 211, 0.3);
+      border-top: 2px dashed rgb(128, 128, 128, 0.1);
+  }
+}
+
+@media (max-width: 768px) {
+  .mobileSidebarCloseWrap {
+      width: 100%;
+      height: 10%;
+      display: flex;
+      justify-content: end;
+      align-items: center;
+      padding: 0 1% 0 0;
+      background-color: white;
+      z-index: 30;
+  }
+}
+
+@media (max-width: 768px) {
+  .sidebarTravelList {
+      width: 100%;
+      height: 85%;
+  }
+}
+@media (max-width: 768px) {
+  .sidebarTravelListO1 {
+      width: 100%;
+      height: 80%;
+      overflow: auto;
+      padding: 0 3%;
+  }
+}
+@media (max-width: 768px) {
+  .header {
+      width: 100%;
+      height: 7dvh;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      background-color: white;
+      z-index: 21;
+      position: relative;
+      box-shadow: 0 3px 5px 3px rgb(221, 221, 211, 0.3);
+  }
+}
+
+@media (max-width: 768px) {
+  .sidebarTravelChoiceOWrapWrap {
+      width: 100%;
+      height: 90%;
+      display: none;
+      }
+}
+
+@media (max-width: 768px) {
+  .mobileSidebar{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 10%;
+    }
+}
+
+@media (max-width: 768px) {
+  .congestionInfoModal {
+    width: 40%;
+    height: 15%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.65);
+    position: absolute;
+    padding: 1% 0.5%;
+    z-index: 10;
+    top: 62px;
+    right: 10px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px 1px lightgray;
+}
+}
+
+@media (max-width: 768px) {
+  .congestionInfoModalColorInfo {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .congestionInfoModalColorInfoRed,
+  .congestionInfoModalColorInfoOrange,
+  .congestionInfoModalColorInfoYellow,
+  .congestionInfoModalColorInfoGreen,
+  .congestionInfoModalColorInfoBlue {
+    display: grid;
+    grid-template-columns: 20% 10% 35% 35%;
+    width: 100%;
+    height: 20%;
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 768px) {
+  .congestionInfoModalMathInfo {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .sidebarTravelChoiceX > svg {
+    animation-name: sidebarTravelChoiceXSvgAnimation;
+    animation-duration: 0.8s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+  }
+  @keyframes sidebarTravelChoiceXSvgAnimation {
+    from {
+      transform: translateY(0);
+      opacity: 0.5;
+    } to {
+      transform: translateY(-15px);
+      opacity: 0.8;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+.sidebarTravelListO1DivInfoTitle,
+.sidebarTravelListO2DivInfoTitle,
+.sidebarTravelListO3DivInfoTitle {
+    font-weight: bold;
+    font-size: 14px;
+}
+}
+

@@ -1,0 +1,16 @@
+.travelMapLevelReset {
+    position: absolute;
+    top: 105px;
+    right: 10px;
+    z-index: 10;
+    cursor: pointer;
+}
+
+.customOverlayMap {
+    background-color: rgb(255, 255, 255, 0.9);
+    width: fit-content;
+    padding: 5%;
+    border-radius: 5px;
+    font-size: 16px;
+    box-shadow: 1px 1px 5px 1px rgb(0, 0, 0, 0.2);
+}

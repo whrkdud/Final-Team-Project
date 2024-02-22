@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Gasoek+One&family=Gowun+Dodum&family=Nanum+Gothic:wght@400;700;800&family=Noto+Sans+KR:wght@900&family=Single+Day&display=swap');
+
+* {
+    /* border: 1px solid black; */
+    box-sizing: border-box;
+    font-family: 'Nanum Gothic', sans-serif;
+    /* font-family: 'Black Han Sans', sans-serif; */
+    /* font-family: 'Gasoek One', sans-serif; */
+}
+
+p {
+    margin: 0;
+    white-space: pre-line;
+}
+
+ul {
+    padding: 0;
+}
+
+.appSidebarContentWrap {
+    display: flex;
+}

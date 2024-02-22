@@ -1,0 +1,42 @@
+.navigation {
+    width: 60%;
+    height: 100%;
+    display: flex;
+}
+.navigation svg {
+    margin-right: 10px;
+}
+.navigation p {
+    font-size: 18px;
+    /* font-weight: 600; */
+}
+
+.navigationCongestionButton {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.navigationCongestionButton div {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.navigationCongestionButton div:hover svg {
+    fill: #F78CA2 !important;
+}
+
+.navigationTravelButton {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.navigationTravelButton div{
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+.navigationTravelButton div:hover svg {
+    fill: #9FBB73 !important;
+}

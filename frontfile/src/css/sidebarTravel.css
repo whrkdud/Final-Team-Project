@@ -1,0 +1,422 @@
+.sidebarTravel {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebarTravelChoiceX {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.sidebarTravelChoiceX > svg {
+    animation-name: sidebarTravelChoiceXSvgAnimation;
+    animation-duration: 0.8s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+}
+@keyframes sidebarTravelChoiceXSvgAnimation {
+    from {
+        transform: translateX(0);
+        opacity: 0.5;
+    } to {
+        transform: translateX(15px);
+        opacity: 0.8;
+    }
+}
+.sidebarTravelChoiceX p {
+    margin: 10% 0;
+}
+
+.sidebarTravelChoiceOWrapWrap {
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+
+.sidebarTravelChoiceOWrap {
+    width: 100%;
+    height: 15%;
+    box-shadow: 0 3px 5px 3px rgb(221, 221, 211, 0.3);
+    background-color: white;
+}
+
+.sidebarTravelChoiceOPlace {
+    width: 100%;
+    height: 40%;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    /* box-shadow: 0 3px 5px 3px rgb(221, 221, 211, 0.3); */
+}
+.sidebarTravelChoiceOPlace > p {
+    font-weight: bold;
+}
+
+.sidebarTravelChoiceOPlaceCongestion {
+    width: 14%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    font-size: 12px;
+    /* font-weight: bold; */
+    color: white;
+    margin-left: 1.5%;
+}
+
+.mobileSidebarTravelChoiceOPlace {
+    width: 100%;
+    height: 40%;
+    display: grid;
+    grid-template-columns: 25% 50% 25%;
+}
+
+.mobileSidebarClose {
+    display: flex;
+    justify-content: end;
+    padding: 2%;
+}
+
+@media (max-width: 768px) {
+    .sidebarTravelChoiceOPlace {
+        width: 100%;
+        height: 100%;
+        grid-column: 2/3;
+        display: flex;
+        align-items: end;
+        justify-content: center;
+        /* box-shadow: 0 3px 5px 3px rgb(221, 221, 211, 0.3); */
+    }
+    .sidebarTravelChoiceOPlace > p {
+        font-weight: bold;
+    }
+  }
+
+.sidebarTravelChoiceO {
+    width: 100%;
+    height: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 14px;
+}
+.sidebarTravelChoiceO > * {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.sidebarTravelChoiceO svg {
+    margin-right: 8px;
+}
+
+.sidebarTravelChoice1Wrap,
+.sidebarTravelChoice2Wrap,
+.sidebarTravelChoice3Wrap {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.sidebarTravelChoice1Wrap:hover svg {
+    fill: rgb(199, 220, 167) !important;
+}
+
+.sidebarTravelChoice2Wrap:hover svg {
+    fill: rgb(255, 197, 197) !important;
+}
+
+.sidebarTravelChoice3Wrap:hover svg {
+    fill: rgb(227, 209, 182) !important;
+}
+
+.sidebarTravelList {
+    width: 100%;
+    height: 85%;
+    /* padding: 0 3%; */
+    /* overflow: auto; */
+}
+
+.sidebarTravelListX {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+}
+.sidebarTravelListX svg {
+    animation-name: sidebarTravelListXSvgAnimation;
+    animation-duration: 0.8s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+}
+@keyframes sidebarTravelListXSvgAnimation {
+    from {
+        transform: translateY(0);
+        opacity: 0.5;
+    } to {
+        transform: translateY(-15px);
+        opacity: 0.8;
+    }
+}
+.sidebarTravelListX p {
+    margin: 10% 0;
+}
+
+.sidebarTravelListO {
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+.sidebarTravelListO ul {
+    width: 100%;
+    height: 30%;
+}
+
+/* .sidebarTravelListO1Ul {
+    width: 100%;
+    height: 20%;
+} */
+
+.sidebarTravelChoice1Category {
+    width: 100%;
+    height: 10%;
+    font-size: 14px;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 3%;
+    background-color: white;
+    box-shadow: 0 3px 5px 3px rgb(221, 221, 211, 0.3);
+    border-top: 2px dashed rgb(128, 128, 128, 0.1);
+}
+.sidebarTravelChoice1Category p {
+    width: fit-content;
+    height: fit-content;
+    cursor: pointer;
+}
+
+.sidebarTravelChoice1Category1 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    width: 100%;
+    height: 35%;
+    margin-bottom: 1%;
+}
+.sidebarTravelChoice1Category1 > * {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sidebarTravelChoice1Category2 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    width: 100%;
+    height: 35%;
+}
+.sidebarTravelChoice1Category2 > * {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sidebarTravelChoice1Category1-1:hover {
+    background-color: rgb(244, 96, 96) !important;
+    color: white !important;
+    border-radius: 5px !important;
+}
+.sidebarTravelChoice1Category1-2:hover {
+    background-color: rgb(240, 152, 114) !important;
+    color: white !important;
+    border-radius: 5px !important;
+}
+.sidebarTravelChoice1Category1-3:hover {
+    background-color: rgb(243, 209, 121) !important;
+    color: white !important;
+    border-radius: 5px !important;
+}
+.sidebarTravelChoice1Category1-4:hover {
+    background-color: rgb(153, 188, 133) !important;
+    color: white !important;
+    border-radius: 5px !important;
+}
+.sidebarTravelChoice1Category2-1:hover {
+    background-color: rgb(140, 192, 222) !important;
+    color: white !important;
+    border-radius: 5px !important;
+}
+.sidebarTravelChoice1Category2-2:hover {
+    background-color: rgb(83, 113, 136) !important;
+    color: white !important;
+    border-radius: 5px !important;
+}
+.sidebarTravelChoice1Category2-3:hover {
+    background-color: rgb(186, 144, 198) !important;
+    color: white !important;
+    border-radius: 5px !important;
+}
+
+.sidebarTravelListO1 {
+    width: 100%;
+    height: 90%;
+    overflow: auto;
+    padding: 0 3%;
+}
+.sidebarTravelListO1::-webkit-scrollbar,
+.sidebarTravelListO2::-webkit-scrollbar,
+.sidebarTravelListO3::-webkit-scrollbar {
+    width: 5px;
+}
+.sidebarTravelListO1::-webkit-scrollbar-thumb,
+.sidebarTravelListO2::-webkit-scrollbar-thumb,
+.sidebarTravelListO3::-webkit-scrollbar-thumb {
+    background-color: rgb(128, 128, 128, 0.5);
+    border-radius: 10px;
+}
+.sidebarTravelListO1::-webkit-scrollbar-track,
+.sidebarTravelListO2::-webkit-scrollbar-track,
+.sidebarTravelListO3::-webkit-scrollbar-track {
+    background-color: lightgray;
+}
+
+
+.catNull {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+}
+
+.sidebarTravelListO2, 
+.sidebarTravelListO3 {
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    padding: 0 3%;
+}
+
+
+.sidebarTravelListO1Div,
+.sidebarTravelListO2Div,
+.sidebarTravelListO3Div {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.sidebarTravelListO1Div:hover {
+    background-color: rgb(159, 187, 115, 0.2);
+}
+
+.sidebarTravelListO2Div:hover {
+    background-color: rgb(255, 197, 197, 0.2);
+}
+
+.sidebarTravelListO3Div:hover {
+    background-color: rgb(227, 209, 182, 0.2);
+}
+
+.sidebarTravelListO1Div img,
+.sidebarTravelListO2Div img,
+.sidebarTravelListO3Div img {
+    width: 100px;
+    height: 100px;
+    border-radius: 30px;
+}
+
+.sidebarTravelListO1DivInfo,
+.sidebarTravelListO2DivInfo,
+.sidebarTravelListO3DivInfo {
+    width: 70%;
+    height: 80%;
+    padding: 0 3%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.sidebarTravelListO1DivInfo > *,
+.sidebarTravelListO2DivInfo > *,
+.sidebarTravelListO3DivInfo > * {
+    margin: 2% 0;
+}
+
+.sidebarTravelListO1DivInfoTitle,
+.sidebarTravelListO2DivInfoTitle,
+.sidebarTravelListO3DivInfoTitle {
+    font-weight: bold;
+    font-size: 15px;
+}
+.sidebarTravelListO1DivInfoTitle p,
+.sidebarTravelListO2DivInfoTitle p,
+.sidebarTravelListO3DivInfoTitle p {
+    width: fit-content;
+}
+
+.sidebarTravelListO1DivInfoAddress,
+.sidebarTravelListO1DivInfoTel,
+.sidebarTravelListO2DivInfoStartEnd,
+.sidebarTravelListO2DivInfoAddress,
+.sidebarTravelListO2DivInfoTel,
+.sidebarTravelListO3DivInfoAddress,
+.sidebarTravelListO3DivInfoTel {
+    font-size: 14px;
+    display: flex;
+}
+
+.sidebarTravelListO1DivInfoAddressSvgWrap, 
+.sidebarTravelListO1DivInfoTelSvgWrap,
+.sidebarTravelListO2DivInfoStartEndSvgWrap,
+.sidebarTravelListO2DivInfoAddressSvgWrap, 
+.sidebarTravelListO2DivInfoTelSvgWrap,
+.sidebarTravelListO3DivInfoAddressSvgWrap, 
+.sidebarTravelListO3DivInfoTelSvgWrap {
+    padding: 1% 3% 0 0;
+}
+
+.sidebarTravelListInfoX {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+}
+
+.mobileSidebarTravelChoiceXWrap {
+    width: 100%;
+    display: flex;
+    position: absolute;
+    top: 0;
+    justify-content: end;
+    padding: 2%;
+}
+
+.mobileSidebarTravelChoiceX {
+    width: fit-content;
+    height: fit-content;
+}
+
+@media (max-width: 768px) {
+    .sidebarTravelChoiceX {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}

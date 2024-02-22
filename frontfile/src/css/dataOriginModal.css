@@ -1,0 +1,41 @@
+.dataOriginModal {
+    width: 15%;
+    height: 10%;
+    background-color: white;
+    z-index: 21;
+    position: absolute;
+    right: 40px;
+    top: 40px;
+    padding: 0.5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 3px;
+    box-shadow: 2px 2px 5px 1px lightgray;
+    display: none;
+    font-size: 14px;
+    color: gray;
+}
+
+@media (max-width: 768px) {
+    .dataOriginModal {
+      width: 35%;
+      height: 8%;
+      background-color: white;
+      z-index: 21;
+      position: absolute;
+      right: 22px;
+      top: 32px;
+      padding: 1%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      border-radius: 3px;
+      box-shadow: 2px 2px 5px 1px lightgray;
+      display: none;
+      font-size: 8px;
+      color: gray;
+    }
+  }
